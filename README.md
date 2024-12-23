@@ -12,7 +12,7 @@
 ---
 
 ## Introduction
-This report presents an in-depth analysis of customer churn prediction for a bank. Key findings reveal that older, inactive customers and those in Spain are more likely to churn. The Random Forest model demonstrated the best performance, with 87% accuracy and actionable insights derived from feature importance analysis. Recommendations focus on retention strategies targeting at-risk groups. This study leverages customer demographic and account activity data to predict churn using machine learning models. The objective is to reduce attrition rates and guide retention strategies.
+This report presents an in-depth analysis of customer churn prediction for a bank. Key findings reveal that older, inactive customers and those in Spain are more likely to churn. The Logisitic Regression model demonstrated the best performance, with 79% accuracy and actionable insights derived from feature importance analysis. Recommendations focus on retention strategies targeting at-risk groups. This study leverages customer demographic and account activity data to predict churn using machine learning models. The objective is to reduce attrition rates and guide retention strategies.
 
 ---
 
@@ -47,10 +47,8 @@ The analysis involves the following steps:
      - Older customers are more likely to churn.
      - Inactive members and those with zero balance have elevated churn rates.
 
-   The following visualizations provide detailed insights into these trends: [Add charts here]
-
 3. **Model Training**:  
-   - Using Logistic Regression, Decision Tree, and Random Forest models to predict churn.
+   - Using Logistic Regression, Decision Tree, and Linear Regression models to predict churn.
 
 4. **Model Evaluation**:  
    - Comparing models based on metrics like accuracy, precision, recall, and AUC.
@@ -61,9 +59,9 @@ The analysis involves the following steps:
 
 | Model              | Accuracy | Precision | Recall | F1-Score | AUC  |
 |---------------------|----------|-----------|--------|----------|------|
-| Logistic Regression | 80%      | 0.75      | 0.60   | 0.67     | 0.78 |
-| Decision Tree       | 85%      | 0.80      | 0.72   | 0.76     | 0.83 |
-| Random Forest       | 87%      | 0.82      | 0.75   | 0.78     | 0.88 |
+| Logistic Regression | 79%      | 0.63      | 0.79   | 0.70     | 0.78 |
+| Decision Tree       | 77%      | 0.77      | 0.78   | 0.77     | 0.83 |
+| Linear Regression  | 14%      | 0.20     | 0.13   | 0.13     | 0.13 |
 
 ---
 
@@ -106,4 +104,4 @@ The analysis involves the following steps:
 ---
 
 ## Conclusion
-This analysis demonstrates the importance of understanding customer behavior to address churn effectively. Random Forest emerged as the best-performing model, offering the most accurate predictions and actionable insights. By targeting at-risk customer segments—older, inactive, female customers—banks can develop data-driven retention strategies.
+This analysis demonstrates the importance of understanding customer behavior to address churn effectively. Logisitc Regression emerged as the best-performing model, offering the most accurate predictions and actionable insights. By targeting at-risk customer segments—older, inactive, female customers—banks can develop data-driven retention strategies.
